@@ -9,14 +9,14 @@ services:
     env_file:
       - .env
     environment:
-	  REQUIRE_USER_AUTHENTICATION: 1
+      REQUIRE_USER_AUTHENTICATION: 1
       ENV: ${ENV}
       POSTGRES_DB: ${POSTGRES_SCHEMA}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_HOST: postgres
       PG_HOST_PORT: ${PG_HOST_PORT}
-	  USER_CODE_PATH: /home/src/${PROJECT_NAME}
+      USER_CODE_PATH: /home/src/${PROJECT_NAME}
     ports:
       - 6789:6789
     volumes:
