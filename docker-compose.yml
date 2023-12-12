@@ -5,7 +5,7 @@ services:
     container_name: magic
     depends_on:
       - postgres
-    command: mage start magic
+    command: mage start ${PROJECT_NAME}
     env_file:
       - .env
     environment:
