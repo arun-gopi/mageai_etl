@@ -21,7 +21,7 @@ services:
       - 6789:6789
     volumes:
       - .:/home/src/
-	  - ./data_dump:/home/src/${PROJECT_NAME}/data_dump
+      - ./data_dump:/home/src/${PROJECT_NAME}/data_dump
     restart: on-failure:5
   postgres:
     image: postgres:14
