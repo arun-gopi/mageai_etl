@@ -11,7 +11,6 @@ This repository contains the source code and documentation for an ETL (Extract, 
 ## Table of Contents
 
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
   - [Configuration](#configuration)
@@ -22,16 +21,17 @@ This repository contains the source code and documentation for an ETL (Extract, 
 
 ## Getting Started
 
-### Prerequisites
-
-Before you begin, ensure you have the following prerequisites installed:
-
-- [MageAI](https://mageai.example.com) - Follow the official MageAI installation guide for setup instructions.
-- [Python](https://www.python.org/) - Make sure you have Python installed on your system.
 
 ### Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/etl-mageai.git
+   git clone https://github.com/arun-gopi/mageai_etl.git mageai_demo
+   cd mageai_demo
+   cp dev.env .env && rm dev.env
+
+2. Edit the .env configuration file
+   
+   ```bash
+   docker compose up
